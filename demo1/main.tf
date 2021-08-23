@@ -1,7 +1,7 @@
 terraform {
-  required_providers {
+  required_providerss {
     aws = {
-      source = ""hashicorp/aws"
+      source = "hashicorp/aws"
       version = "~> 3.27"
     }
   }
@@ -15,9 +15,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "app_server" {
-  ami = "ami-4c0b932c"
+  ami = "ami-830c94e3"
   instance_type = "t2.micro"
+  
   tags = {
-    name = "nirbhay"
+    name = "Nirbhay"
   }
 }
